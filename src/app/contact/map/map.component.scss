@@ -1,0 +1,27 @@
+.contact{
+  font-size: 1.5em;
+  font-family: 'AvenirNextCyr-regular';
+  position: relative;
+  display: block;
+  padding: 11px 18px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2px;
+  border-radius: 11px;
+  border: 1px solid #2a3b37;
+  justify-content: center;
+  text-align: center;
+  background: #ffffff;
+  cursor: pointer;
+  color: #2a3b37;
+}
+
+.contact:hover{
+  border: 1px solid #f8f9fa;
+  background: #485d58;
+  color: #ffffff;
+  
+}
+.map{
+  color: antiquewhite;
+}

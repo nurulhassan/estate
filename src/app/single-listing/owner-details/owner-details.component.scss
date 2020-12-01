@@ -1,0 +1,55 @@
+.sidebar {
+	padding-left: 40px;
+}
+
+.author-card {
+	padding: 29px;
+	border: 1px solid #ebebeb;
+	border-radius: 1px;
+  margin-bottom: 44px;
+  margin-top:3rem;
+}
+
+.author-card .author-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	float: left;
+}
+
+.author-card .author-info {
+	padding-top: 10px;
+	margin-left: 100px;
+}
+
+.author-card h5 {
+	font-weight: 400;
+}
+
+.author-card .author-contact {
+	display: block;
+	clear: both;
+	padding-top: 40px;
+	position: relative;
+}
+
+.author-card .author-contact:after {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 1px;
+	top: 20px;
+	left: 0;
+	background: #ebebeb;
+}
+
+.author-card .author-contact p {
+	font-size: 16px;
+	margin-bottom: 0;
+	line-height: 2;
+}
+
+.author-card .author-contact p i {
+	margin-right: 5px;
+	color: #30caa0;
+}

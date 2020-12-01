@@ -1,0 +1,81 @@
+.fcard-btm {
+	margin-bottom: 40px;
+}
+
+.fcard-price {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	padding: 13px;
+	background: #30caa0;
+	color: #fff;
+}
+
+.fcard-img {
+	height: 250px;
+}
+
+.fcard-sale {
+	margin: 20px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: #e94646;
+	padding: 7px 13px;
+	display: inline-block;
+	border-radius: 2px;
+	font-family: 'AvenirNextCyr-light';
+	position: relative;
+	z-index: 3;
+}
+
+.fcard-border {
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+
+.fcard-title {
+	padding-top: 20px;
+}
+
+.fcard-title h5 {
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.fcard-title p i {
+	color: #30caa0;
+}
+
+.room-info-warp {
+	padding: 25px;
+	padding-bottom: 0;
+}
+
+.fcard-roominfo {
+	border-top: 1px solid #ebebeb;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+.fcard-roominfo p {
+	margin-bottom: 15px;
+}
+
+.fcard-roominfo p i {
+	color: #30caa0;
+	margin-right: 10px;
+}
+
+.fcard-roominfo:last-child .rf-right {
+	padding-right: 14px;
+}
+
+h5 {
+    font-family: 'AvenirNextCyr-medium';
+}
+
+p {
+    font-family: 'AvenirNextCyr-medium';
+}

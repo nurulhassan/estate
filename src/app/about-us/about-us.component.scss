@@ -1,0 +1,76 @@
+.heading {
+  color: white;
+  margin-top: 5rem;
+  font-family: 'AvenirNextCyr-demi';
+}
+
+.banner-top {
+  min-height: 45vh;
+  margin-top: -19vh;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text h5 {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.about-text .about-text-left,
+.about-text .about-text-right {
+  padding-right: 70px;
+  margin-bottom: 3rem;
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-list li {
+  font-size: 16px;
+  font-family: 'AvenirNextCyr-regular';
+  color: #707070;
+  margin-bottom: 10px;
+}
+
+.about-list li i {
+  color: #30caa0;
+  margin-right: 5px;
+}
+
+.top-image {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.test {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .head {
+    text-align: center;
+  }
+
+  .about-text .about-text-left,
+  .about-text .about-text-right {
+    padding-right: 0;
+  }
+}
+
+h5 {
+  font-family: 'AvenirNextCyr-demi';
+}
+
+p {
+  font-family: 'AvenirNextCyr-regular';
+  font-size: 18px;
+}

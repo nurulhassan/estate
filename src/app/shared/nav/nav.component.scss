@@ -1,0 +1,90 @@
+.nav_bgcolor{
+  background-color: transparent;
+  font-family: 'AvenirNextCyr-regular';
+}
+
+.navbar_top{
+  margin-top: 27px;
+}
+
+.nav-menu{
+  text-decoration: none;
+  color: #ffffff;
+  padding: 7px 8px;
+  font-size: 12px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.nav-item:hover{
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #adb5bd;;
+}
+
+.nav-content{
+  justify-content: center;
+}
+
+@media (max-width: 994px){
+  .navbar_top{
+    margin-top: 0px;
+
+  }
+  .nav_bgcolor{
+    background-color:#1b1f20;
+
+  }
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    background-color: #212529;
+    align-items: center;
+  }
+  .nav_l {
+    color: #fff;
+    border-left: none;
+
+  }
+  .hidden-md-logo{
+    display: none;
+  }
+}
+
+.nav-login a {
+  color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.nav-login a:hover {
+  background: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 3px;
+}
+.dropdown_main{
+  background-color: azure;
+  margin-left: 35px;
+}
+
+.dropdown_main li {
+  width: 200px;
+  padding: 5px 18px;
+}
+
+.sticky {
+  background: #1b1f20;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  height: auto;
+  z-index: 111111;
+  width: 100%;
+}
+
+.hidden-md-logo{
+  margin-top: -15px;
+}

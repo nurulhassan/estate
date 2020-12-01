@@ -1,0 +1,48 @@
+<form [formGroup]="propertyForm" (ngSubmit)="onSubmit()">
+  <label>
+    Address
+    <input type="text" formControlName="address" required />
+  </label>
+  <br />
+  <label>
+    city
+    <input type="text" formControlName="city" required />
+  </label>
+  <br />
+  <label>
+    state
+    <input type="text" formControlName="state" />
+  </label>
+  <br />
+  <label>
+    cost
+    <input type="number" formControlName="cost" id="" />
+  </label>
+  <br />
+  <label>
+    area
+    <input type="number" formControlName="area" id="" />
+  </label>
+  <br />
+  <label>
+    bedrooms
+    <input type="number" formControlName="bedrooms" id="" />
+  </label>
+  <br />
+  <label for="">
+    bathrooms
+    <input type="number" formControlName="bathrooms" id="" />
+  </label>
+  <br />
+  <label>
+    description
+    <textarea
+      formControlName="description"
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea>
+  </label>
+  <br />
+  <button type="submit" [disabled]="!propertyForm.valid">Submit</button>
+</form>

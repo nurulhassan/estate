@@ -1,0 +1,58 @@
+<div
+  class="banner-top text-center"
+  [style.background-image]="'url(assets/banner.jpg)'"
+>
+  <h1 class="heading">Log in</h1>
+</div>
+
+<div class="containerclass">
+  <div class="imgcontainer">
+    <img src="../assets/img_avatar2.png" alt="Avatar" class="avatar" />
+  </div>
+  <div class="container">
+    <h1>Log In</h1>
+    <p>Please fill in this form to create an account.</p>
+  </div>
+  <hr />
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input
+      type="text"
+      [formControl]="email"
+      placeholder="Enter Username"
+      name="uname"
+      required
+    />
+
+    <label for="psw"><b>Password</b></label>
+    <input
+      type="password"
+      [formControl]="password"
+      placeholder="Enter Password"
+      name="psw"
+      required
+    />
+
+    <button type="submit" (click)="signInUser()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" /> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</div>
+
+<div *ngIf="authService.user$ | async as user; else login">
+  <hr />
+  <button class="button" (click)="authService.signOut()">Sign Out</button>
+</div>
+
+<ng-template #login>
+  <button class="button" (click)="authService.googleSignIn()">
+    <i class="fa fa-google"></i>Google
+  </button>
+</ng-template>
+<app-footer></app-footer>

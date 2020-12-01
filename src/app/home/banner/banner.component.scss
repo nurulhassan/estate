@@ -1,0 +1,28 @@
+.banner-top {
+  min-height: 100vh;
+  margin-top: -19vh;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-heading {
+  color: white;
+  margin-top: 7rem;
+  font-family: 'AvenirNextCyr-regular';
+}
+
+small {
+  font-family: 'AvenirNextCyr-light';
+}
+
+.btn-primary {
+  color: #403030;
+  background-color: #adb5bd;
+  border: none;
+  position: relative;
+}

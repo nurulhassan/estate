@@ -1,0 +1,48 @@
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+}
+
+.rating{
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.name{
+  font-size: 1.5rem;
+  font-family: 'AvenirNextCyr-medium';
+  font-style: bold;
+}
+p {
+  font-family: 'AvenirNextCyr-regular';
+}
+span{
+  font-family: 'AvenirNextCyr-light';
+
+}
+.pic{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+@media(min-width:360px){
+  .c-image img{
+    height: 33rem;
+    background-size: contain;
+  }
+}
+
+@media(min-width:500px){
+  .c-image img{
+    height: 30rem;
+    background-size: contain;
+  }
+}
+
+@media(min-width:768px){
+  .c-image img{
+    height: 100%;
+    background-size: contain;
+  }
+}

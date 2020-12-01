@@ -1,0 +1,50 @@
+.service{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'AvenirNextCyr-regular';
+  box-shadow: 0 10px 12px 0 #9cc0e8;
+}
+
+h3{
+  font-family: 'AvenirNextCyr-medium';
+  color: #4f3737;
+}
+.service-title{
+  color: white;
+}
+
+.service-list{
+  border-radius: 50%;
+  background-color: #cc5674;
+  max-width: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  max-height: 5rem;
+}
+
+.service-list i {
+  color: white;
+  font-size: 2.5rem;
+  
+}
+
+.icon{
+  position: absolute;
+  left: 25%;
+  top:25%;
+  transform: (-50% , -50%);
+}
+
+p .text{
+  color: #4f3737;
+  
+}
+.lead{
+  font-size: 1.3rem;
+}
+.subtext{
+  color: #4f3737;
+}
+
+

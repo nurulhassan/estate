@@ -1,0 +1,47 @@
+.heading-content{
+	font-size: 2rem;
+	font-family: 'AvenirNextCyr-medium';
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	border: 1px solid #ebebeb;
+	margin-bottom: 17px;
+	height: 40px;
+	padding: 0 20px;
+	font-size: 14px;
+}
+
+p,input, button {
+	font-family: 'AvenirNextCyr-regular';
+}
+
+.contact-form textarea {
+	height: 80px;
+	padding: 15px 20px 10px;
+}
+
+.site-btn {
+	position: relative;
+    display: block;
+    padding: 11px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2px;
+    border-radius: 11px;
+    border: 1px solid #2a3b37;
+    justify-content: center;
+    text-align: center;
+    background: #ffffff;
+    cursor: pointer;
+    color: #2a3b37;
+}
+
+.site-btn:hover{
+  border: 1px solid #f8f9fa;
+    background: #485d58;
+    color: #ffffff;
+}
+

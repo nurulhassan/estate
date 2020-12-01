@@ -1,0 +1,51 @@
+.search_bar{
+    position: relative;
+    z-index: 2;
+    margin-top: -5%;
+}
+
+.search_form{
+    padding: 31px;
+    background: #253e39d6;
+    border-radius: 3px;
+}
+
+.search_form input{
+    background: #fff;
+    height: 46px;
+    border: none;
+    border-radius: 2px;
+    width:100%;
+    margin-right: 20px;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-family: 'AvenirNextCyr-medium';
+}
+.search_form select{
+    background: #fff;
+    height: 46px;
+    border: none;
+    border-radius: 2px;
+    width: 100%;
+    margin-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'AvenirNextCyr-medium';
+}
+
+.search_btn{
+    padding: 15px 30px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    min-width: auto;
+    border: none;
+    color: #fff;
+    font-family: 'AvenirNextCyr-regular';
+}
+
+.search_form .btn_sbt {
+    background: #333;
+    border-radius: 2px;
+}

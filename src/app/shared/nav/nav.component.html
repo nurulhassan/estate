@@ -1,0 +1,115 @@
+<header id="navbar">
+  <nav
+    class="navbar navbar-expand-lg navbar-dark navbar_top nav_bgcolor sticky-top"
+  >
+    <ul
+      class="w-100 nav-menu menu list-unstyled d-flex d-none d-md-block d-sm-block d-lg-none"
+    >
+      <li class="w-50 float-left">
+        <a routerLink="/imprint"
+          ><img src="assets/logo.png" class="img-fluid float-left" alt=""
+        /></a>
+      </li>
+      <li class="w-50 float-right">
+        <button
+          #navbarToggler
+          class="navbar-toggler float-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          (click)="isShown = !isShown"
+          [attr.aria-expanded]="isShown"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </li>
+    </ul>
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: isShown }"
+      id="navbarSupportedContent"
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="navbar-nav mr-auto nav-content">
+              <li class="nav-item  mb-2">
+                <a class="nav-menu" (click)="isShown = false" routerLink="/"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item  mb-2">
+                <a
+                  class="nav-menu"
+                  (click)="isShown = false"
+                  routerLink="/featured-listing"
+                  >Featured listing</a
+                >
+              </li>
+              <li class="nav-item  mb-2">
+                <a
+                  class="nav-menu"
+                  (click)="isShown = false"
+                  routerLink="/single-listing"
+                  >Single Listing</a
+                >
+              </li>
+              <li class="nav-item  mb-2">
+                <a
+                  class="nav-menu"
+                  (click)="isShown = false"
+                  routerLink="/about-us"
+                  >About us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 hidden-md-logo ">
+            <ul class="nav-menu menu ">
+              <a routerLink="/imprint "
+                ><img src="assets/logo.png" class="img-fluid" alt=""
+              /></a>
+            </ul>
+          </div>
+
+          <div class="col-md-5">
+            <ul class="navbar-nav mr-auto nav-content">
+              <li class="nav-item mx-2 mb-2">
+                <a routerLink="/contact" class="nav-menu">Contact Us</a>
+              </li>
+              <ng-container
+                *ngIf="authService.user$ | async as user; else login"
+              >
+                <li class="nav-item mx-2 mb-2">
+                  <span class="nav-menu"
+                    ><i class="fa fa-user"></i> {{ user.displayName }}</span
+                  >
+                </li>
+
+                <li class="nav-login mx-2 mb-2">
+                  <a class="nav-menu" (click)="authService.signOut()">
+                    Sign Out
+                  </a>
+                </li>
+              </ng-container>
+              <ng-template #login>
+                <li class="nav-item mx-2 mb-2">
+                  <a routerLink="/register" class="nav-menu"> Register</a>
+                </li>
+                <li class=" nav-login mx-2 mb-2">
+                  <a routerLink="/login" class="nav-menu">
+                    <i class="fa fa-sign-in"></i>
+                    Login</a
+                  >
+                </li>
+              </ng-template>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
